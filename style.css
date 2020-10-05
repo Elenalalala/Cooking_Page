@@ -1,0 +1,137 @@
+*{
+ margin:0;
+ padding:0; 
+ /* font-family: 'Archivo Black', sans-serif; */
+
+}
+body{
+    
+}
+#one{
+    display:flex;
+    background-color: blanchedalmond;
+    padding:150px 0px 150px 50px;
+}
+#two{
+    display: flex;
+    background-color: rgba(255, 160, 122, 0.322);
+    padding:100px;
+}
+div{
+    margin:10px;
+    flex:1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+li{
+    list-style: none;
+    text-align: left;
+    padding-left: 10px;
+    margin-top:30px;
+    font-size:20px;
+}
+#Ingredients li{
+    text-align: center;
+}
+p{
+    margin:100px;
+    padding-top:150px;
+    font-size:30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    color:lightsalmon;
+    font-family: 'Montserrat', sans-serif;
+    padding:20px;
+}
+h2{
+    text-align: center;
+    color:lightsalmon;
+    margin:30px;
+    padding:20px;
+    font-size:50px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#two h2{
+    padding:0;
+    border-bottom: white 2px solid;
+}
+label{
+    display:flex;
+    margin:10px;
+}
+
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color:white;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: lightgoldenrodyellow;
+    transition: 0.3s;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: orange;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
